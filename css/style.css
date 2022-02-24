@@ -58,6 +58,10 @@ ul, ol, li {
   justify-content: space-between;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -65,9 +69,8 @@ ul, ol, li {
 .section-title {
   flex: 0 0 100%;
   max-width: 100%;
-  padding: 0 16px;
   text-align: center;
-  margin: 80px 60px;
+  margin: 80px 0;
 }
 
 .section-title h2 {
@@ -127,6 +130,7 @@ ul, ol, li {
 .home-section {
   min-height: 100vh;
   position: relative;
+  margin-bottom: 80px;
 }
 
 .home-section .slide {
@@ -224,6 +228,7 @@ ul, ol, li {
 
 /* couple section start */
 .couple-section {
+  margin-bottom: 80px;
 }
 
 .couple-section .couple {
@@ -312,6 +317,7 @@ ul, ol, li {
 
 /* story section start */
 .story-section {
+  margin-bottom: 80px;
 
 }
 
@@ -406,10 +412,82 @@ ul, ol, li {
 /* story section end */
 
 /* event section start */
-.event-section .section-title {
-  color: #fff;
-
+.event-section {
+  background-color: #fb839e;
+  padding-bottom: 130px;
 }
+
+.event-section .section-title h2{
+  color: #fff;
+}
+
+.event-section .event-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 18px;
+}
+
+.event-section .event-item:nth-child(2) {
+  transform: translateY(50px);
+}
+
+.event-section .event-item-inner {
+  flex: 0 0 100%;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 60px 60px 100px;
+  text-align: center;
+  box-shadow: 0 0 10px #888;
+  position: relative;
+}
+
+.event-section .event-item-inner::before {
+  position: absolute;
+  content: '';
+  left: 12px;
+  right: 12px;
+  top: 12px;
+  bottom: 12px;
+  border: 5px solid #fb839e;
+}
+
+
+.event-section .event-item-inner h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+.event-section .event-item-inner span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fb839e;
+}
+
+.event-section .event-item-inner span:last-of-type {
+  margin-bottom: 18px;
+}
+
+.event-section .event-item-inner p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.event-section .event-item-inner img {
+  position: absolute;
+  width: 40px;
+  left: 50%;
+  bottom: 18px;
+  margin-left: -20px;
+}
+
+
 
 
 /* event section end */
