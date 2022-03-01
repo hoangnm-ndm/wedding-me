@@ -25,7 +25,7 @@ body {
 img {
   max-width: 100%;
   width: 100%;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   object-fit: cover;
 }
 
@@ -239,6 +239,11 @@ ul, ol, li {
   position: relative;
 }
 
+.couple-section .couple-img {
+  width: 300px;
+  height: 360px;
+}
+
 .couple-section .couple img{
   max-width: 280px;
   border-radius: 50%;
@@ -407,6 +412,10 @@ ul, ol, li {
 .story-section .story-img, .story-section .story-text {
   flex: 0 0 50%;
   max-width: 50%;
+}
+
+.story-img {
+  max-height: 480px;
 }
 
 /* story section end */
