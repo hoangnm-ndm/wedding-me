@@ -574,11 +574,70 @@ ul, ol, li {
   align-items: center;
 }
 
+.gp-container {
+  position: relative;
+}
+
 .gallery-popup img {
+  height: 90vh;
+  width: 90vw;
   max-height: 90vh;
   max-width: 90vw;
 }
 
+
+.gallery-popup .gp-counter {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.gallery-popup .gp-close {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  color: #000;
+  font-size: 38px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.gallery-popup .gp-controls {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+.gp-controls .prev, .gp-controls .next {
+  font-size: 32px;
+  text-align: center;
+  line-height: 46px;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #000;
+}
+
+.gp-controls .prev i, .gp-controls .next i {
+  margin: 24px 12px;
+}
 
 
 /* Gallery section end */
