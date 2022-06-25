@@ -1,0 +1,27 @@
+.header .nav ul li a:hover, .header .nav ul li a.active,
+.couple-section .couple img,
+.couple-section .couple h3,
+.couple-section .couple .heart-icon,
+.couple-section .social-links i,
+.story-section .story-item i,
+.story-section .story-text h3,
+.event-section .event-item-inner span,
+.social-links i
+{
+  color: #fb839e;
+}
+
+.social-links i,
+.couple-section .couple img 
+{
+  border-color: #fb839e;
+}
+
+
+.social-links a:hover i,
+.event-section,
+.people-section .filter-btn.active 
+
+{
+  background-color: #fb839e;
+}
